@@ -1,12 +1,10 @@
 const initialState = {
-  todos: [{id: 0, completed: false, text: "Drink a tea"}]
+  todos: [{id: 0, completed: false, text: "Do something one"}, {id: 1, completed: true, text: "Do something else"}]
 };
 
 const todosReducer = (state = initialState, action) => {
   switch(action.type){
     case 'ADD_TODO':
-	  console.log(action.payload);
-	  console.log(action.id);
       return{
         ...state,
         todos: [...state.todos, {id: action.id, completed: false, text: action.payload}]
