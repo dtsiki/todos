@@ -29,7 +29,9 @@ function App() {
   }
   
   const handleClearTodos =() => {
+    localStorage.clear();
     dispatch(clearTodos());
+	
   }  
 
   const handleChange = (e) => {

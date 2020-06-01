@@ -17,7 +17,7 @@ function TodoItem({ todo, id }) {
   return (
     <li className="todos__item">
       <Toggle completed={todo.completed} handle={handleToggle}>Change status</Toggle>
-      <p className="todos__text">{todo.text}(i:{id})</p>
+      <p className="todos__text">{todo.text}</p>
 	  <button className="button button--delete" onClick={handleDelete}  aria-label="delete todo"><span className="visually-hidden">Delete</span></button>
     </li>
   );
