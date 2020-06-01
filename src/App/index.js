@@ -24,7 +24,6 @@ function App() {
   }
 
   const handleAddTodo = () => {
-    console.log("Add");
     dispatch(addTodo(newTodo));
 	setModalOpen(false);
   }
@@ -36,7 +35,7 @@ function App() {
   const handleChange = (e) => {
     setNewTodo(e.target.value);
   }
-  
+   
   return (
     <Container>
 	  <Title>to do list</Title>	
