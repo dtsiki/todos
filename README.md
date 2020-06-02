@@ -1,9 +1,9 @@
 # To Do List
 This is another one of React + Redux To Do List WebApp. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt text](https://github.com/dtsiki/todos/preview/To-Do-List.png "To Do List Preview")
+![alt text](https://github.com/dtsiki/todos/blob/master/preview/To-Do-List.png "To Do List Preview")
 
-![alt text](https://github.com/dtsiki/todos/preview/Add-New-Todo.png "Add New To Do")
+![alt text](https://github.com/dtsiki/todos/blob/master/preview/Add-New-Todo.png "Add New To Do")
 
 
 ### Overview
