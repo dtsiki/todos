@@ -4,7 +4,7 @@ import TodoItem from '../components/TodoItem';
 function TodoList({ todos }) {
   const getList = () => {
     let list = [];
-	if(todos.length === 0) list.push(<li key="empty" className="todos__item--empty">List is empty</li>);
+	if(!todos || todos.length === 0) list.push(<li key="empty" className="todos__item--empty">List is empty</li>);
 	else if(todos){
       todos.map((todosItem, id) => {
 	    list.push(<TodoItem id={id} key={`todo-${id}`} todo={todosItem} />);
