@@ -31,23 +31,44 @@ function App() {
   const handleClearTodos =() => {
     localStorage.clear();
     dispatch(clearTodos());
-	
   }  
 
   const handleChange = (e) => {
     setNewTodo(e.target.value);
   }
    
+  const clearStorage =() => {
+    localStorage.clear();	
+  }   
+   
+    
+  const showStorage =() => {
+    console.log(localStorage);	
+  }   
+
+    
+  const showTodos =() => {
+    console.log(todos);	
+  }     
+  
+  
   return (
     <Container>
 	  <Title>to do list</Title>	
+		<button onClick={clearStorage}>clear storage</button>
+		<button onClick={showStorage}>show storage</button>
+		<button onClick={showTodos}>show todos</button>			
+		
+		
 	    <Filter>
 	      <button className="button button--filter" onClick={handleClearTodos}>Delete all</button>
 	    </Filter>
 	    <TodoList todos={todos}/>
 	    <button className="button button--open" onClick={openModal} aria-label="add new todo"><span className="visually-hidden">Add new todo</span></button>
 	    <Modal title="Add new todo" active={isModalOpen} close={closeModal} >
+		
 	      <Form>
+		    <p>New todo: {newTodo}</p>
 	        <Input name="newItem" placeholer="Add new todo" handle={handleChange} />
 	        <button className="button button--add" onClick={handleAddTodo} >Add</button>
 	      </Form>	  

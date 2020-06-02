@@ -1,12 +1,5 @@
-import { loadState } from '../../services'
+const todosReducer = (state = [], action) => {
 
-const defaultState = {
-  todos: [{completed: false, text: "Do something"}, {completed: true, text: "Do something else"}]
-};
-
-const initialState = localStorage.length ? loadState() : defaultState;
-
-const todosReducer = (state = initialState, action) => {
   switch(action.type){
     case 'ADD_TODO':
       return{
