@@ -45,10 +45,8 @@ function App() {
 	    </Filter>
 	    <TodoList todos={todos}/>
 	    <button className="button button--open" onClick={openModal} aria-label="add new todo"><span className="visually-hidden">Add new todo</span></button>
-	    <Modal title="Add new todo" active={isModalOpen} close={closeModal} >
-		
+	    <Modal title="Add new todo" active={isModalOpen} close={closeModal} >		
 	      <Form>
-		    <p>New todo: {newTodo}</p>
 	        <Input name="newItem" placeholer="Add new todo" handle={handleChange} />
 	        <button className="button button--add" onClick={handleAddTodo} >Add</button>
 	      </Form>	  
