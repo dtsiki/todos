@@ -37,29 +37,9 @@ function App() {
     setNewTodo(e.target.value);
   }
    
-  const clearStorage =() => {
-    localStorage.clear();	
-  }   
-   
-    
-  const showStorage =() => {
-    console.log(localStorage);	
-  }   
-
-    
-  const showTodos =() => {
-    console.log(todos);	
-  }     
-  
-  
   return (
     <Container>
-	  <Title>to do list</Title>	
-		<button onClick={clearStorage}>clear storage</button>
-		<button onClick={showStorage}>show storage</button>
-		<button onClick={showTodos}>show todos</button>			
-		
-		
+	  <Title>to do list</Title>		
 	    <Filter>
 	      <button className="button button--filter" onClick={handleClearTodos}>Delete all</button>
 	    </Filter>
