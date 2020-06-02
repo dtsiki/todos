@@ -7,7 +7,7 @@ This is another one of React + Redux To Do List WebApp. This project was bootstr
 
 
 ### Overview
-  - Add new todo list
+  - Add new todo to list
   - Mark selected todo as completed (or back to uncompleted)
   - Delete todos item or all todos at once
   - All todos is local stored
